@@ -26,7 +26,7 @@ $SUDO pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-m
 
 echo "--> pacman.conf dosyasına Chaotic-aur deposu ekleniyor..."
 if ! grep -q "\[chaotic-aur\]" /etc/pacman.conf; then
-  echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.conf.d/chaotic-mirrorlist" | $SUDO tee -a /etc/pacman.conf
+  echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | $SUDO tee -a /etc/pacman.conf
 fi
 
 echo "--> Sistem ve depolar güncelleniyor..."

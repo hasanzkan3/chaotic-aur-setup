@@ -9,6 +9,13 @@ else
   SUDO=""
 fi
 
+echo "--> pacman gizli anahta kontrolü yapılıyor..."
+# Secret key yoksa pacman-key depolama alanını kullanılabilir hale getirir
+if ! $SUDO pacman-key --list-secret-keys &>/dev/null; then
+  echo "--> Gizli anahtar bulunamadı. pacman-key yazılımı ilk kez kullanılabilir hale geliyor..."
+  $SUDO pacman-key --init
+fi
+
 echo "--> Anahtar sunucularından GPG anahtarları çekiliyor..."
 curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x67BF8CA6DA181643C9723B4ED6C9442437365605" | gpg --import -
 curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xEF925EA60F33D0CB85C44AD13056513887B78AEB" | gpg --import -

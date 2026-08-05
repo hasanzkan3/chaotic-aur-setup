@@ -9,7 +9,7 @@ else
   SUDO=""
 fi
 
-echo "--> pacman gizli anahta kontrolü yapılıyor..."
+echo "--> pacman gizli anahtar kontrolü yapılıyor..."
 # Secret key yoksa pacman-key depolama alanını kullanılabilir hale getirir
 if ! $SUDO pacman-key --list-secret-keys &>/dev/null; then
   echo "--> Gizli anahtar bulunamadı. pacman-key yazılımı ilk kez kullanılabilir hale geliyor..."

@@ -16,10 +16,10 @@ $ git clone https://github.com/hasanzkan3/chaotic-aur-setup.git
 $ cd chaotic-aur-setup
 $ sudo chmod +x chaotic-aur-setup-english.sh
 or if user root
-$ chmod +x chaotic-aur-setup-english.sh
-$ bash chaotic-aur-setup.sh
+# chmod +x chaotic-aur-setup-english.sh
+# bash chaotic-aur-setup.sh
 or
-$ ./chaotic-aur-setup-english.sh
+# ./chaotic-aur-setup-english.sh
 ```
 
 ## Türkçe

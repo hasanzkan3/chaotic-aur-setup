@@ -36,6 +36,20 @@ sudo ./chaotic-aur-setup-english.sh
 ./chaotic-aur-setup-english.sh
 ```
 
+**or install with wget command on linux ("-c") flag is optional it's let you continue when installation interrupt**
+
+```bash
+wget -c https://raw.githubusercontent.com/hasanzkan3/chaotic-aur-setup/refs/heads/main/chaotic-aur-setup-english.sh
+```
+
+```bash
+chmod +x chaotic-aur-setup-english.sh
+```
+
+```bash
+sudo ./chaotic-aur-setup-english.sh
+```
+
 ---
 
 ## Türkçe
@@ -69,4 +83,18 @@ sudo ./chaotic-aur-setup.sh
 
 ```bash
 ./chaotic-aur-setup.sh
+```
+
+**ya da Linux'de bulunan wget komutu ile raw(ham) dosyayı indir**
+
+```bash
+wget -c wget -c https://raw.githubusercontent.com/hasanzkan3/chaotic-aur-setup/refs/heads/main/chaotic-aur-setup-english.sh
+```
+
+```bash
+chmod +x chaotic-aur-setup.sh
+```
+
+```bash
+sudo ./chaotic-aur-setup.sh
 ```

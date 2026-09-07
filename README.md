@@ -1,7 +1,7 @@
 <!-- İçindekiler / Dil Seçim Kısmı -->
 
 - [English](#english)
-- [Türkçe](#türkçe)
+- [Türkçe](#turkish)
 
 --
 
